@@ -15,7 +15,7 @@ import pandas as pd
 import seaborn as sns
 sns.set_style("darkgrid")
 
-datas = pd.read_csv("ssa-names-2022-MAY-complete.csv")
+datas = pd.read_csv("ssa-names-2022-MAY-complete (1).csv")
 datas
 
 datas.head()
