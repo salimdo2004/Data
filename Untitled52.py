@@ -25,8 +25,7 @@ datas.columns
 # Afficher toutes les années présentes dans la base de données
 print(datas['Year'].unique())
 
-# Filtrer les données entre 1910 et 2021
-data = datas[(datas['Year'] >= 1910) & (datas['Year'] <= 2021)]
+datas['Year'] = pd.to_numeric(datas['Year'], errors='coerce')
 
 # Vérifier les premières lignes du nouveau dataset filtré
 print(data.head())
