@@ -28,7 +28,7 @@ print(datas['Year'].unique())
 datas['Year'] = pd.to_numeric(datas['Year'], errors='coerce')
 
 # Vérifier les premières lignes du nouveau dataset filtré
-print(data.head())
+print(datas.head())
 
 pieces = []
 # Création d'une liste d'années
